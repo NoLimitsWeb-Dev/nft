@@ -1,53 +1,63 @@
-div{
-    border: 2px;
-    border-radius: 25px;
-    background-color: rgb(49, 49, 65);
-    display: block;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding: 50px;
+/* *{
+    font-family: "Outfit", sans-serif;
+} */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
 }
-.main{
-    border-radius: 15px;
+
+.cont {
+  border: 2px;
+  border-radius: 25px;
+  background-color: rgb(49, 49, 65);
+  display: block;
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto;
 }
-h1{
+.main {
+  border-radius: 15px;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+}
+p {
+  color: skyblue;
+}
+
+.days {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.avat {
+  display: flex;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  align-items: center;
+}
+.main1 {
+  border: solid 1px white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
     color: white;
-    font-size: 30px;
+    margin-left: 8px;
 }
-p{
-    color: skyblue;
-    font-size: 25px;
-}
-table{
-    padding: 20px;
-    font-size: 25px;
-    color: aqua;
-    width: 100%;
-}
-.tab1{
-    text-align: left;
-}
-.tab2{
-    text-align: right;
-    color:skyblue;
-}
-hr{
-    background-color: skyblue;
-    height: 0.5px;
-}
-.main1{
-    border-color: white;
-    border: solid 1px white;
-    border-radius: 30px;
-    margin-right: 15px;
-}
-.tab3{
-    border: 2px;
-    border-top-right-radius:0px;
-    border-top-left-radius: 0px;
-    background-color: rgb(49, 49, 65);
-    display: block;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding: 0px;
+
+/* media query */
+
+@media (max-width: 600px) {
+  .cont {
+    width: 90%;
+  }
 }
